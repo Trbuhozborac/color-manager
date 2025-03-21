@@ -1,7 +1,7 @@
 import ColorsManager from "./components/ColorsManager";
+import DoNotClickMe from "./components/DoNotClickMe";
 import { SnackbarProvider } from "notistack";
 import "./App.css";
-import DoNotClickMe from "./components/DoNotClickMe";
 
 function App() {
   return (

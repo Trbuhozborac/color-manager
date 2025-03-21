@@ -1,13 +1,13 @@
 import React from "react";
 import SearchColors from "./SearchColors/SearchColors";
-import ColorList from "./ColorList/ColorList";
+import ColorsList from "./ColorsList/ColorsList";
 import DeleteColorDialog from "./DeleteColorDialog/DeleteColorDialog";
 import useColorStore from "../store/useColorsStore";
 import { Box, Button, Typography } from "@mui/material";
 import { AddColorDialog } from "./AddColorDialog/AddColorDialog";
 import { IColorProps } from "../api/interfaces/IColorProps";
 
-export default function ColorManager() {
+export default function ColorsManager() {
   const { colors, fetchColors } = useColorStore();
   const [displayedColors, setDisplayedColors] =
     React.useState<IColorProps[]>(colors);
@@ -31,7 +31,7 @@ export default function ColorManager() {
           Colors Management
         </Typography>
         <SearchColors colors={colors} setDisplayedColors={setDisplayedColors} />
-        <ColorList
+        <ColorsList
           colors={displayedColors}
           setColorToDeleteId={setColorToDeleteId}
           setIsDeleteDialogOpen={setIsDeleteDialogOpen}

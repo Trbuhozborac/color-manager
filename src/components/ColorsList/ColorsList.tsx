@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Button, Typography } from "@mui/material";
 import { IColorListProps } from "./IColorListProps";
 
-export default function ColorList({
+export default function ColorsList({
   colors,
   setColorToDeleteId,
   setIsDeleteDialogOpen,
