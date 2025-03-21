@@ -13,9 +13,11 @@ export function addColorFormikForm(
       hex: "",
     },
     validationSchema: Yup.object({
-      name: Yup.string().min(MIN_CHARACTERS).required("*name is required"),
+      name: Yup.string()
+        .min(MIN_CHARACTERS, `*name must have min ${MIN_CHARACTERS} characters`)
+        .required("*name is required"),
       hex: Yup.string()
-        .min(MIN_CHARACTERS)
+        .min(MIN_CHARACTERS, `*hex must have min ${MIN_CHARACTERS} characters`)
         .matches(HEX_REG_EXP, "*incorrect hex format")
         .required("*hex is required"),
     }),
