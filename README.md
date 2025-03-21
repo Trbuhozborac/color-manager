@@ -13,7 +13,7 @@ Make sure you have the following installed:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/color-management-app.git
+   git clone https://github.com/Trbuhozborac/color-manager.git
    cd color-management-app
    ```
 2. Install dependencies:
