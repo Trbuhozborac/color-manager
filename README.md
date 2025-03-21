@@ -14,7 +14,7 @@ Make sure you have the following installed:
 1. Clone the repository:
    ```sh
    git clone https://github.com/Trbuhozborac/color-manager.git
-   cd color-management-app
+   cd color-manager
    ```
 2. Install dependencies:
    ```sh
